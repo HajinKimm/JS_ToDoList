@@ -20,8 +20,8 @@
     ```javascript
     localStorage.setItem('key', 'value') : 데이터 저장하기
     localStorage.getItem('key')          : 데이터 가져오기
-    localStorage.removeItem('key')     : 해당 키와 값 제거
-    localStorage.clear()                    : Storage에 저장된 데이터 전체 제거
+    localStorage.removeItem('key')       : 해당 키와 값 제거
+    localStorage.clear()                 : Storage에 저장된 데이터 전체 제거
     ``` 
 ## 1.3 code 설명 및 javascript 기능 
 - list 목록 데이터 추가 및 localStorage에 저장
