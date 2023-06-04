@@ -1,8 +1,8 @@
 # TO Do List (일정관리앱)
 ## # 목차
-## 1. version1 : vanilla script로 code작성 , localStorage 이용
-## 2. version2 : version1기본 code를 class함수로 변경
-## 3. version3 : module
+### 1. version1 : vanilla script로 code작성 , localStorage 이용
+### 2. version2 : version1기본 code를 class함수로 변경
+### 3. version3 : module
 ---
 # 1. version1
 ## 1.1 파일
