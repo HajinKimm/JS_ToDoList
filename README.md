@@ -1,8 +1,8 @@
 # TO Do List (일정관리앱)
 ## # 목차
-## 1. version1 : vanilla script로 code작성 , localStorage 이용
-## 2. version2 : version1기본 code를 class함수로 변경
-## 3. version3 : module
+#### 1. version1 : vanilla script로 code작성 , localStorage 이용
+#### 2. version2 : version1기본 code를 class함수로 변경
+#### 3. version3 : module
 ---
 # 1. version1
 ## 1.1 파일
@@ -20,9 +20,9 @@
     ```javascript
     localStorage.setItem('key', 'value') : 데이터 저장하기
     localStorage.getItem('key')          : 데이터 가져오기
-    localStorage.removeItem('key')     : 해당 키와 값 제거
-    localStorage.clear()                    : Storage에 저장된 데이터 전체 제거
-    ``` 
+    localStorage.removeItem('key')       : 해당 키와 값 제거
+    localStorage.clear()                 : Storage에 저장된 데이터 전체 제거
+    ``` ****
 ## 1.3 code 설명 및 javascript 기능 
 - list 목록 데이터 추가 및 localStorage에 저장
     ```javascript

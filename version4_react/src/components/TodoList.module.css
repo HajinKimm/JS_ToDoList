@@ -1,0 +1,65 @@
+.todoList {
+  border-top: 1px solid #999;
+  overflow: auto;
+  height: 500px;
+  width: 90%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-sizing: border-box;
+}
+.todoList li {
+  display: flex;
+  position: relative;
+  padding: 10px 0px 10px 20px;
+  align-items: center;
+}
+.todoList li:nth-child(even) {
+  background: rgba(0, 0, 0, 0.2);
+}
+.todoList li:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.8);
+}
+.todoList li.on {
+  color: tomato;
+}
+.todoList li.on strong {
+  text-decoration: line-through;
+}
+.todoList li i {
+  margin-right: 20px;
+}
+.todoList li strong {
+  width: 90%;
+  display: inline-block;
+}
+.todoList li button {
+  background: #435782;
+  color: #fff;
+  height: 40px;
+  width: 50px;
+  margin-right: 10px;
+  border: none;
+  box-sizing: border-box;
+}
+.todoList li form {
+  display: flex;
+  justify-content: space-between;
+  width: 1560px;
+}
+.todoList li form input {
+  margin-right: 20px;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.todoList li form button {
+  background: #435782;
+  color: #fff;
+  height: 40px;
+  width: 50px;
+  margin-right: 10px;
+  border: none;
+  box-sizing: border-box;
+}
+/*# sourceMappingURL=TodoList.module.css.map */

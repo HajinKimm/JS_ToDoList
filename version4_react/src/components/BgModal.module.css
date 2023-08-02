@@ -1,0 +1,30 @@
+.bgModal {
+  z-index: 10;
+  background: #fff;
+  padding-top: 50px;
+  padding-left: 50px;
+  position: absolute;
+  width: 1600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bgModal ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.bgModal ul li {
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.bgModal ul li img {
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 5px #fff;
+  width: 250px;
+  height: 150px;
+}
+.bgModal ul li img:hover {
+  border: 2px solid tomato;
+}
+/*# sourceMappingURL=BgModal.module.css.map */
