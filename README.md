@@ -22,7 +22,11 @@
     localStorage.getItem('key')          : 데이터 가져오기
     localStorage.removeItem('key')       : 해당 키와 값 제거
     localStorage.clear()                 : Storage에 저장된 데이터 전체 제거
+<<<<<<< HEAD
     ``` ****
+=======
+    ``` 
+>>>>>>> 5ba1aeb46424057dd7ac52765d9486367d750c39
 ## 1.3 code 설명 및 javascript 기능 
 - list 목록 데이터 추가 및 localStorage에 저장
     ```javascript
