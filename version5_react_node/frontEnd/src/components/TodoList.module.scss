@@ -1,0 +1,68 @@
+.todoList{
+    border-top: 1px solid #999;
+    overflow: auto;
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+    box-sizing: border-box;
+    
+    li{
+        display: flex;
+        position: relative;
+        padding: 10px 0px 10px 20px;
+        align-items: center;
+        &:nth-child(even){
+            background: rgba(0,0,0,0.2);
+        }
+        &:nth-child(odd){
+            background: rgba(255,255,255,0.8);
+
+        }
+        &.on{
+            color: tomato;
+            strong{
+                text-decoration: line-through;
+            }
+        }
+        i{
+            margin-right: 20px;
+            // margin-left: 10px;
+        }
+        strong{
+            width:90%;
+            display: inline-block;
+        }
+        button{
+            background:#435782;
+            color: #fff;
+            height: 40px;
+            width: 50px;
+            margin-right: 10px;
+            border: none;
+            box-sizing: border-box;
+        }
+        form{
+            // display: inline-block;
+            display: flex;
+            justify-content: space-between;
+            width: 1560px;
+            input{
+                margin-right: 20px;
+                width:100%;
+                display: inline-block;
+                box-sizing: border-box;
+            }
+            button{
+                background:#435782;
+                color: #fff;
+                height: 40px;
+                width: 50px;
+                margin-right: 10px;
+                border: none;
+                box-sizing: border-box;
+            }
+        }
+    }
+}

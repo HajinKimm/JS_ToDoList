@@ -1,0 +1,19 @@
+.input {
+  text-align: center;
+}
+.input form input {
+  width: 500px;
+  height: 40px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.input form button {
+  background: #435782;
+  color: #fff;
+  height: 40px;
+  width: 100px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border: none;
+}
+/*# sourceMappingURL=TodoInput.module.css.map */
