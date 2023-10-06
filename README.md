@@ -1,8 +1,17 @@
 # TO Do List (일정관리앱)
-## # 목차
-#### 1. version1 : vanilla script로 code작성 , localStorage 이용
-#### 2. version2 : version1기본 code를 class함수로 변경
-#### 3. version3 : module
+
+    일정을 관리할 수 있는 프로그랜 기능 구현
+    일정 추가, 삭제, 수정, 체크
+    현재시간 확인, 배경이미지 변경
+    localStorage / node JS를 이용한 데이터 유지
+---
+#### 1. v1 
+- version1 : html5 + css + Vanilla script, localStorage 이용
+- version2 : version1기본 code를 class함수로 변경
+- version3 : module화 작업 <br/> : https://hajinkimm.github.io/JS_ToDoList/version3/
+#### 2. v2 
+- version4 : React JS(vite) + sass <br/>: https://hajinkimm.github.io/JS_ToDoList/version4_react/dist/
+- version5 : React JS(vite) + sass + node JS
 ---
 # 1. version1
 ## 1.1 파일
@@ -22,11 +31,7 @@
     localStorage.getItem('key')          : 데이터 가져오기
     localStorage.removeItem('key')       : 해당 키와 값 제거
     localStorage.clear()                 : Storage에 저장된 데이터 전체 제거
-<<<<<<< HEAD
-    ``` ****
-=======
-    ``` 
->>>>>>> 5ba1aeb46424057dd7ac52765d9486367d750c39
+
 ## 1.3 code 설명 및 javascript 기능 
 - list 목록 데이터 추가 및 localStorage에 저장
     ```javascript
@@ -173,3 +178,46 @@
     }
   ```
   
+# 4. version4
+- version3을 React Redux + sass로 리팩도링
+- 배경이미지 설정 기능 구현
+- 현재시간 확인 가능
+## 4.1 화면 출력
+- 결과물
+
+    <img src='./img/react_output.png' width='400px'>
+---
+# 5. version5
+- version4를 nodeJS를 이용하여 데이터 유지
+
+## 5.1 변경코드
+```java
+    const getTodo = (req, res)=>{
+        res.send(data)
+    }
+    const postTodo = (req,res)=>{
+        const title = req.body.item
+        const item = {id:no++, title:title, isChk:false, isEdit:true}
+        data.push(item)
+        res.send(data)
+    }
+    const deleteTodo = (req,res)=>{
+        data = data.filter(item=>item.id !== Number(req.params.id))
+        res.send(data)
+    }
+    const putTodo = (req,res)=>{
+        const item = data.find(item=>item.id === Number(req.params.id))
+        if(item){
+            item.isEdit = !item.isEdit
+        }
+        res.send(item)
+    }
+    const updataTodo = (req,res)=>{
+        data = data.map(item=>item.id === Number(req.params.id)?{...req.body, isEdit:!req.body.isEdit}:item)
+        res.send(data)
+    }
+    const putChkTodo = (req,res)=>{
+        data = data.map(item=>item.id === Number(req.params.id)?{...item, isChk:!item.isChk}:item)
+        res.send(data)
+    }
+```
